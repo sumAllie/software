@@ -18,25 +18,17 @@
 				<el-table-column type="index" width="60">
 				</el-table-column>
 				<el-table-column prop="stuid" label="学号" width="120" sortable>
-			    </el-table-column>
-			    <el-table-column prop="name" label="姓名" width="120" sortable>
-			    </el-table-column>
-			    <el-table-column prop="chinese" label="语文" width="120" sortable>
-			    </el-table-column>
-			    <el-table-column prop="math" label="数学" width="100" sortable>
-			    </el-table-column>
-			    <el-table-column prop="integrate" label="综合" width="100" sortable>
-			    </el-table-column>
-			    <el-table-column prop="english" label="英语" width="120" sortable>
-			    </el-table-column>
-			    <el-table-column prop="spoken" label="口语" min-width="180" sortable>
-			    </el-table-column>
-			    <el-table-column prop="listen" label="听力" min-width="180" sortable>
-			    </el-table-column>
-			    <el-table-column prop="all" label="总分" min-width="180" sortable>
-			    </el-table-column>
-			    <el-table-column prop="time" label="时间" min-width="180" sortable>
-			    </el-table-column>
+        </el-table-column>
+        <el-table-column prop="name" label="姓名" width="120" sortable>
+        </el-table-column>
+        <el-table-column prop="school" label="录取学校" min-width="180" sortable>
+        </el-table-column>
+        <el-table-column prop="major" label="录取专业" min-width="180" sortable>
+        </el-table-column>
+        <el-table-column prop="batch" label="录取批次" min-width="180" sortable>
+        </el-table-column>
+        <el-table-column prop="type" label="录取类型" min-width="180" sortable>
+        </el-table-column>
 			</el-table>
 		</template>
 
