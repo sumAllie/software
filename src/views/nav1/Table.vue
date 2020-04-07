@@ -40,7 +40,7 @@
 			<el-table-column prop="time" label="时间" min-width="180" sortable>
 			</el-table-column>
 			<el-table-column label="操作" width="150">
-				<template scope="scope">
+				<template slot-scope="scope">
 					<el-button size="small" @click="handleEdit(scope.$index, scope.row)">编辑</el-button>
 					<el-button type="danger" size="small" @click="handleDel(scope.$index, scope.row)">删除</el-button>
 				</template>
@@ -154,13 +154,14 @@
 			//性别显示转换
 			formatSex: function (row, column) {
 				return row.sex == 1 ? '男' : row.sex == 0 ? '女' : '未知';
-			},
+				},
 			handleCurrentChange(val) {
 				this.page = val;
 				this.getUsers();
-			},
-			//获取用户列表
-			getUsers() {
+				},
+
+      // 获取用户列表
+      getUsers() {
 				let para = {
 					page: this.page,
 					name: this.filters.name

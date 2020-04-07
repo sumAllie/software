@@ -9,7 +9,7 @@
 					<i class="fa fa-align-justify"></i>
 				</div>
 			</el-col>
-			
+
 			<!--删除-->
 			<el-col :span="4" class="userinfo">
 				<el-dropdown trigger="hover">
@@ -21,12 +21,12 @@
 					</el-dropdown-menu>
 				</el-dropdown>
 			</el-col>
-			
-			
+
+
 		</el-col>
 		<el-col :span="24" class="main">
 			<aside :class="collapsed?'menu-collapsed':'menu-expanded'">
-			
+
 			<!--改-->
 				<!--导航菜单-->
 				<el-menu :default-active="$route.path" class="el-menu-vertical-demo" @open="handleopen" @close="handleclose" @select="handleselect"
@@ -44,7 +44,7 @@
 					<li v-for="(item,index) in $router.options.routes" v-if="!item.hidden" class="el-submenu item">
 						<template v-if="!item.leaf">
 							<div class="el-submenu__title" style="padding-left: 20px;" @mouseover="showMenu(index,true)" @mouseout="showMenu(index,false)"><i :class="item.iconCls"></i></div>
-							<ul class="el-menu submenu" :class="'submenu-hook-'+index" @mouseover="showMenu(index,true)" @mouseout="showMenu(index,false)"> 
+							<ul class="el-menu submenu" :class="'submenu-hook-'+index" @mouseover="showMenu(index,true)" @mouseout="showMenu(index,false)">
 								<li v-for="child in item.children" v-if="!child.hidden" :key="child.path" class="el-menu-item" style="padding-left: 40px;" :class="$route.path==child.path?'is-active':''" @click="$router.push(child.path)">{{child.name}}</li>
 							</ul>
 						</template>
@@ -145,8 +145,8 @@
 </script>
 
 <style scoped lang="scss">
-	@import '~scss/scss_vars';//错误
-	
+	@import "../styles/vars";
+
 	.container {
 		position: absolute;
 		top: 0px;

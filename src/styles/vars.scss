@@ -1,10 +1,1 @@
 $color-primary: #20a0ff;//#18c79c
-
-resolve: {
-    extensions: ['.js', '.vue', '.json', '.scss'],
-    alias: {
-      'vue$': 'vue/dist/vue.esm.js',
-      '@': resolve('src'),
-      'scss': path.resolve(__dirname, '../src/style'),
-    }
-  }
